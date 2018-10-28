@@ -1,0 +1,9 @@
+# global
+.*.swp
+.DS_Store
+
+# mysql
+data/
+
+# phpstorm
+.idea
