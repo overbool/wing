@@ -4,9 +4,9 @@ help:
 	@echo "Usage: make COMMAND"
 	@echo ""
 	@echo "Commands:"
-	@echo "  docker-start        Create and start containers"
-	@echo "  docker-stop         Stop and clear all services"
-	@echo "  logs                Follow log output"
+	@echo "  start        Create and start containers"
+	@echo "  stop         Stop and clear all services"
+	@echo "  logs         Follow log output"
 
 start:
 	docker-compose up -d
