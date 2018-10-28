@@ -5,6 +5,7 @@ help:
 	@echo ""
 	@echo "Commands:"
 	@echo "  start        Create and start containers"
+	@echo "  restart      Restart all services"
 	@echo "  stop         Stop and clear all services"
 	@echo "  logs         Follow log output"
 
@@ -13,6 +14,9 @@ start:
 
 debug:
 	docker-compose up
+
+restart:
+	docker-compose restart
 
 stop:
 	@docker-compose down -v
