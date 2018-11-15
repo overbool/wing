@@ -7,3 +7,6 @@ data/
 
 # phpstorm
 .idea
+
+# app
+app/
