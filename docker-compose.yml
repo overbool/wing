@@ -12,7 +12,7 @@ services:
     ports:
       - "${NGINX_PORT}:80"
     volumes:
-      - ./app:/var/www/html
+      - wing-rsync:/var/www/html:nocopy
       - ./etc/nginx/:/etc/nginx/conf.d/
     depends_on:
       - php
@@ -21,7 +21,7 @@ services:
     image: ${PHP_IMAGE}
     container_name: ${PHP_NAME}
     volumes:
-      - ./app:/var/www/html
+      - wing-rsync:/var/www/html:nocopy
       - ./etc/php/php.ini:/usr/local/etc/php/conf.d/php.ini
     links:
       - mysql
@@ -51,3 +51,6 @@ services:
       - "${MYSQL_PORT}:3306"
     volumes:
       - "./data/db/mysql:/var/lib/mysql"
+volumes:
+  wing-rsync:
+    external: true
