@@ -274,3 +274,6 @@
 [2018-12-23 11:23:07 +0800] Sync wing-rsync       command  rsync --exclude='.gitignore' --exclude='.git/' --exclude='.DS_Store' --exclude='node_modules' -ap '/Users/xcc/Code/web/wing/app' rsync://127.0.0.1:10871/volume
 [2018-12-23 11:23:07 +0800] Sync wing-rsync            ok  Synced /Users/xcc/Code/web/wing/app
 [2018-12-23 11:23:07 +0800] Sync wing-rsync        output  
+[2018-12-23 11:24:33 +0800] Sync wing-rsync       command  rsync --exclude='.gitignore' --exclude='.git/' --exclude='.DS_Store' --exclude='node_modules' -ap '/Users/xcc/Code/web/wing/app' rsync://127.0.0.1:10871/volume
+[2018-12-23 11:24:34 +0800] Sync wing-rsync            ok  Synced /Users/xcc/Code/web/wing/app
+[2018-12-23 11:24:34 +0800] Sync wing-rsync        output  
